@@ -1,0 +1,34 @@
+body{
+    background-color: #eee;
+}
+
+ul{
+    list-style-type: none; /*Elementos sin círculo al lado*/
+    margin: 0; /*Reiniciamos el margen a 0*/
+    padding: 0; /*Al igual que el padding*/
+    overflow: hidden; /*Por si existe algún desborde*/
+    position: fixed; /*Para que el menú no se mueva al scroll*/
+    top: 0; /*Esté lo más cercano posible a la parte superior*/
+    left: 0; /*^ a la izquierda*/
+    width: 100%;/*Ocupe todo el ancho de la pantalla*/
+    background-color: #333;
+}
+li{
+    float: left; /*También se puede utilizar display:inline*/
+}
+li a{ /*Damos estilo a los "botones"*/
+    display: block;
+    color: blanchedalmond; /*Color de letra*/
+    text-align: center; /*Alineación de texto centrada*/
+    padding: 14px; /*Padding de 14px*/
+    text-decoration: none; /*Quitar el subrayado de links*/
+}
+li:hover{ /*Diseño al pasar el cursor sobre los links*/
+    background-color: rgba(0,0,0,0.2);/*Negro transparente*/
+}
+.active{
+    background-color: #4caf50; /*Color a enlace*/
+}
+.content{
+    margin-top: 57px; /*Contenido desplazado hacia abajo*/
+}
